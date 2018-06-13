@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+		<!-- 国产浏览器高速模式 -->
+		<meta name="renderer" content="webkit">
+		<title>公司详情</title>
+		<!-- awesome字体 -->
+		<link type="text/css" rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+		<!-- 通用/页面样式 -->
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<!-- jQM -->
+		<link rel="stylesheet" href="plugins/jQueryMobile/jquery.mobile.icons.min.css">
+		<link rel="stylesheet" href="plugins/jQueryMobile/jquery.mobile.structure-1.4.3.min.css">
+	</head>
+	<body>
+		<div class="page-wrap" id="page-company-info" data-role="page">
+			<input type="hidden" id="token">
+			<div class="content-wrap" id="company-info">
+				<div class="base-info-table">
+					<div class="base-title">基础信息</div>
+					<div class="base-detail-table">
+						<div class="base-item">
+							<div class="left-item">公司状态：</div>
+							<div class="right-item has" id="base-company-status">启用</div>
+							<div class="clear"></div>
+						</div>
+						<div class="base-item">
+							<div class="left-item">公司名称：</div>
+							<div class="right-item" id="base-company-name"></div>
+							<div class="clear"></div>
+						</div>
+						<div class="base-item">
+							<div class="left-item">注册地址：</div>
+							<div class="right-item" id="base-company-address"></div>
+							<div class="clear"></div>
+						</div>
+						<div class="base-item">
+							<div class="left-item">联系人：</div>
+							<div class="right-item" id="base-company-contact"></div>
+							<div class="clear"></div>
+						</div>
+						<div class="base-item">
+							<div class="left-item">联系方式：</div>
+							<div class="right-item" id="base-company-tel"></div>
+							<div class="clear"></div>
+						</div>
+						<div class="base-item">
+							<div class="left-item">信用代码：</div>
+							<div class="right-item" id="base-company-code"></div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="base-extra-table">
+					<p><span>是否有章:</span><span class="stamp has">有</span></p>
+					<p><span>营业执照:</span><span class="see-picture">查看图片</span></p>
+					<p><span>开户许可证:</span><span class="permission">无</span></p>
+				</div>
+				<div class="mission-info-table">
+					<div class="mission-title">任务情况</div>
+					<div class="info-detail-table">
+						<p><span>当期任务：</span><span id="current-mission-count">0</span></p>
+						<p><span>历史任务：</span><span><span id="history-done-count">0</span>/<span id="history-all-count">0</span></span></p>
+					</div>
+					<div class="btn-mission-detail">查看任务详情</div>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery库 -->
+		<script type="text/javascript" src="plugins/jQuery/jquery-2.1.4.min.js"></script>
+		<!-- vue.js -->
+		<!--<script type="text/javascript" src="plugins/vue/vue.js"></script>-->
+		<!-- jQM.js -->
+		<script type="text/javascript" src="plugins/jQueryMobile/jquery.mobile-1.4.5.js"></script>
+		<!-- 工具方法 -->
+		<script type="text/javascript" src="js/util.js"></script>
+		<!-- 通用配置 -->
+		<script type="text/javascript" src="js/config.js"></script>
+		<!-- 通用控制器 -->
+		<script type="text/javascript" src="js/common.js"></script>
+		<!-- 页面控制器 -->
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+		<!-- 国产浏览器高速模式 -->
+		<meta name="renderer" content="webkit">
+		<title>任务列表</title>
+		<!-- awesome字体 -->
+		<link type="text/css" rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+		<!-- jQM css -->
+		<link type="text/css" rel="stylesheet" href="plugins/jQueryMobile/jquery.mobile-1.4.5.css">
+		<link type="text/css" rel="stylesheet" href="plugins/jQueryMobile/jquery.mobile.icons.min.css">
+		<!-- 通用/页面样式 -->
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<div class="page-wrap" id="page-index" data-role="page">
+			<div class="header" id="index-header" data-role="header" data-position="fixed" data-fullscreen="false" data-tap-toggle="false">
+				<div class="header-top">
+					<div class="header-search-bar">
+						<input class="search-input" id="search-input" type="text" data-role="none" placeholder="输入公司名">
+						<div class="search-btn" id="search-company"><i class="fa fa-search"></i></div>
+					</div>
+					<div class="header-btn-wrap">
+						<span id="logout">注销</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="top-bar">
+					<div class="bar-btn cur" id="all">所有任务</div>
+					<div class="bar-btn" id="not-done">未完成</div>
+					<div class="btn-add-mission"><span>+</span><span>新任务</span></div>
+				</div>
+			</div>
+			<input type="hidden" id="token">
+			<!--<div class="header">-->
+				<!--<div class="header-left"><i class="fa fa-angle-left"></i>返回</div>-->
+				<!--<div class="header-mid">添加mission</div>-->
+				<!--<div class="header-right"></div>-->
+			<!--</div>-->
+			<div class="content-wrap" id="content-index"  data-position="fixed">
+
+				<div class="mission-table">
+
+				</div>
+			</div>
+			<div class="footer" data-role="footer" data-position="fixed" data-fullscreen="false" data-tap-toggle="false">
+				<div class="footer-bar">
+
+				</div>
+			</div>
+		</div>
+		<!-- jQuery库 -->
+		<script type="text/javascript" src="plugins/jQuery/jquery-2.1.4.min.js"></script>
+		<!-- vue.js -->
+		<!--<script type="text/javascript" src="plugins/vue/vue.js"></script>-->
+		<!-- jQM.js -->
+		<script type="text/javascript" src="plugins/jQueryMobile/jquery.mobile-1.4.5.js"></script>
+		<!-- 工具方法 -->
+		<script type="text/javascript" src="js/util.js"></script>
+		<!-- 通用配置 -->
+		<script type="text/javascript" src="js/config.js"></script>
+		<!-- 通用控制器 -->
+		<script type="text/javascript" src="js/common.js"></script>
+		<!-- fileUpload  -->
+			<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+		<script type="text/javascript" src="plugins/jQueryFileUpload/jquery.ui.widget.js"></script>
+			<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+		<script type="text/javascript" src="plugins/jQueryFileUpload/jquery.iframe-transport.js"></script>
+			<!-- The basic File Upload plugin -->
+		<script type="text/javascript" src="plugins/jQueryFileUpload/jquery.fileupload.js"></script>
+		<!-- 页面控制器 -->
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>
